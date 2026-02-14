@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalbinin Kodu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <main class="experience">
+      <section class="hero glass-card">
+        <p class="eyebrow">Sevgililer Günü Özel</p>
+        <h1>Kalbinin Kodu</h1>
+        <p class="subtitle">
+          "Sevgilim yok" dedin, ben de sana kendi hikâyenin yıldızı olacağın dijital bir
+          sahne hazırladım. Bu gece senin.
+        </p>
+
+        <div class="actions">
+          <button id="love-btn" class="btn btn-primary">Bir Dilek Tut ✨</button>
+          <button id="music-btn" class="btn btn-secondary">Müziği Başlat 🎵</button>
+        </div>
+
+        <p id="message" class="message">Bir dilek seç ve kalbini dinle…</p>
+      </section>
+
+      <section class="stats">
+        <article class="stat glass-card">
+          <span class="stat-value" id="self-love">0%</span>
+          <span class="stat-label">Öz Sevgi Enerjisi</span>
+        </article>
+        <article class="stat glass-card">
+          <span class="stat-value" id="joy-meter">0%</span>
+          <span class="stat-label">Mutluluk Frekansı</span>
+        </article>
+        <article class="stat glass-card">
+          <span class="stat-value" id="dream-mode">OFF</span>
+          <span class="stat-label">Rüya Modu</span>
+        </article>
+      </section>
+
+      <section class="timeline glass-card">
+        <h2>Bu Gece İçin Mini Plan</h2>
+        <ul>
+          <li><span>19:00</span> Sevdiğin bir kahveyi hazırla.</li>
+          <li><span>20:00</span> Favori filmini aç.</li>
+          <li><span>21:30</span> Kendine bir hedef notu yaz.</li>
+          <li><span>23:00</span> Gökyüzüne bakıp dileğini fısılda.</li>
+        </ul>
+      </section>
+    </main>
+
+    <audio id="ambient-audio" loop>
+      <source
+        src="https://cdn.pixabay.com/download/audio/2023/04/17/audio_bf00795d72.mp3?filename=romantic-ambient-piano-145896.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
